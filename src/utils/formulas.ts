@@ -3,6 +3,8 @@ export const formulaForColumnOfFour = (boardSize: number) =>
 
 export const formulaForColumnOfThree = (boardSize: number) => boardSize * boardSize - (boardSize + boardSize) - 1;
 
+export const formulaForMoveBelow = (boardSize: number) => boardSize * boardSize - boardSize - 1;
+
 export const generateInvalidMoves = (boardSize: number, isFour: boolean = false) => {
 	const invalidMoves: Array<number> = [];
 
